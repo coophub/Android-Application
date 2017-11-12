@@ -7,8 +7,8 @@ android {
         applicationId "com.gmail.coophub.feedback.canada.app"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 6
-        versionName "1.01.4"
+        versionCode 7
+        versionName "1.01.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -20,6 +20,7 @@ android {
 }
 
 dependencies {
+    compile 'com.google.firebase:firebase-core:11.0.4'
     implementation 'com.google.firebase:firebase-messaging:11.0.4'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
