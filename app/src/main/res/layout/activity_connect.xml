@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fullscreen_content2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/test"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.55"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/id_card"/>
+
+        <TextView
+            android:id="@+id/connectMainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/connect_title"
+            android:textColor="@color/offWhite"
+            android:textSize="38sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/connectDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginTop="15dp"
+            android:text="@string/connect_description"
+            android:textColor="@color/offWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/connectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.45"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp">
+
+        <Button
+            android:id="@+id/employer_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/connect_page_buttons_background"
+            android:padding="40dp"
+            android:text="@string/connect_first_button"
+            android:textColor="@drawable/connect_page_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/student_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/connect_page_buttons_background"
+            android:padding="40dp"
+            android:text="@string/connect_second_button"
+            android:textColor="@drawable/connect_page_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gmail.coophub.feedback.canada.app.HomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:background="@color/mainPageBackground"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.32">
+
+            <TextView
+                android:id="@+id/text_main_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/main_title_border"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingBottom="10dp"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp"
+                android:paddingTop="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/offWhite"
+                android:textSize="38sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/block1"
+                    android:layout_height="@dimen/paddingHomeBlock"
+                    android:layout_width="@dimen/paddingHomeBlock"
+                    android:background="@drawable/home_page_block1"
+                    android:src="@drawable/light_bulb"
+                    android:padding="@dimen/innerPadding"/>
+
+                <ImageView
+                    android:id="@+id/block2"
+                    android:layout_height="@dimen/paddingHomeBlock"
+                    android:layout_width="@dimen/paddingHomeBlock"
+                    android:background="@drawable/home_page_block2"
+                    android:src="@drawable/briefcase"
+                    android:padding="@dimen/innerPadding"/>
+
+                <ImageView
+                    android:id="@+id/block3"
+                    android:layout_height="@dimen/paddingHomeBlock"
+                    android:layout_width="@dimen/paddingHomeBlock"
+                    android:background="@drawable/home_page_block3"
+                    android:src="@drawable/test"
+                    android:padding="@dimen/innerPadding"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/block4"
+                        android:background="@drawable/home_page_block3"
+                        android:layout_height="@dimen/paddingHomeBlock"
+                        android:layout_width="@dimen/paddingHomeBlock"
+                        android:src="@drawable/school"
+                        android:padding="@dimen/innerPadding"/>
+
+                    <ImageView
+                        android:id="@+id/block5"
+                        android:layout_height="@dimen/paddingHomeBlock"
+                        android:layout_width="@dimen/paddingHomeBlock"
+                        android:background="@drawable/home_page_block4"
+                        android:src="@drawable/student"
+                        android:padding="@dimen/innerPadding"/>
+
+                    <ImageView
+                        android:id="@+id/block6"
+                        android:layout_height="@dimen/paddingHomeBlock"
+                        android:layout_width="@dimen/paddingHomeBlock"
+                        android:background="@drawable/home_page_block5"
+                        android:src="@drawable/books"
+                        android:padding="@dimen/innerPadding"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.31"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <Button
+                android:id="@+id/main_page_sign_in_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/sign_in_button_background"
+                android:padding="12dp"
+                android:text="@string/sign_up_title"
+                android:textColor="@drawable/sign_in_button_text_color"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/main_page_log_in_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/log_in_button_background"
+                android:padding="12dp"
+                android:text="@string/log_in_title"
+                android:textColor="@drawable/log_in_button_text_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

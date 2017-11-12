@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "599368936297",
+    "firebase_url": "https://coophub-184316.firebaseio.com",
+    "project_id": "coophub-184316",
+    "storage_bucket": "coophub-184316.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599368936297:android:fb778820c09bd52c",
+        "android_client_info": {
+          "package_name": "com.coophub.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599368936297-ggucn5ueltvoriiomt1d086ipu3fd1d2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.coophub.app",
+            "certificate_hash": "9575367745f5471f58b95ae5cea8c3c868ee2c42"
+          }
+        },
+        {
+          "client_id": "599368936297-k8rvn6m32iv488sv9o3me0jf5j2vqo4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.coophub.app",
+            "certificate_hash": "e343be2650ce4cbf06a01c2d06dd401449e82215"
+          }
+        },
+        {
+          "client_id": "599368936297-9hmct1hqs5jklrlt80rmra4lobsn5e5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKCtYa9HIjACnae3_jZjb9n7TLqBPT32A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599368936297-9hmct1hqs5jklrlt80rmra4lobsn5e5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599368936297:android:1e090b96c92543a9",
+        "android_client_info": {
+          "package_name": "com.gmail.coophub.feedback.canada.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599368936297-39mpfp96bp1mvrasppqiq6rhqe10ap8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gmail.coophub.feedback.canada.app",
+            "certificate_hash": "e343be2650ce4cbf06a01c2d06dd401449e82215"
+          }
+        },
+        {
+          "client_id": "599368936297-9hmct1hqs5jklrlt80rmra4lobsn5e5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKCtYa9HIjACnae3_jZjb9n7TLqBPT32A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599368936297-9hmct1hqs5jklrlt80rmra4lobsn5e5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

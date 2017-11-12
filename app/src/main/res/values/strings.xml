@@ -1,0 +1,25 @@
+<resources>
+    <!-- APP -->
+    <string name="app_name">COOPHUB</string>
+
+    <!-- CONNECT ACTIVITY -->
+    <string name="connect_title">Hey there!</string>
+    <string name="connect_description">Are you looking to hire? Are you looking to be hired? Choose one below!</string>
+    <string name="connect_first_button">EMPLOYER</string>
+    <string name="connect_second_button">STUDENT</string>
+
+    <!-- SIGN UP ACTIVITY -->
+    <string name="sign_up_title">SIGN UP</string>
+    <string name="sign_up_description">To create an account, please enter your credentials in the fields below</string>
+
+    <!-- EDIT TEXTS -->
+    <string name="edit_text_first_name">First Name</string>
+    <string name="edit_text_last_name">Last Name</string>
+    <string name="edit_text_email">Email Address</string>
+    <string name="edit_text_password">Password</string>
+
+    <!-- LOG IN ACTIVITY -->
+    <string name="log_in_title">LOG IN</string>
+    <string name="log_in_description">Please enter your credentials in the fields below</string>
+
+</resources>

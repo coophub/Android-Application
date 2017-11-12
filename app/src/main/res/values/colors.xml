@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- WHITE -->
+    <color name="white">#FFFFFF</color>
+    <color name="offWhite">#EEEEEE</color>
+    <color name="description">#CCCCCC</color>
+    <color name="mainPageBackground">#FFF4D3</color>
+
+    <!-- SHADES OF BLACK -->
+    <color name="colorPrimary">#232323</color>
+    <color name="test">#222222</color>
+    <color name="black_overlay">#66000000</color>
+
+    <!-- YELLOW -->
+    <color name="blackYellow">#CCA008</color>
+    <color name="colorAccent">#FFC80A</color>
+
+    <!-- GREEN -->
+    <color name="offWhiteGreen">#EDF7ED</color>
+    <color name="lightGreen">#4CAF50</color>
+    <color name="green">#3C8C40</color>
+    <color name="darkGreen">#2D6930</color>
+
+    <!-- RED -->
+    <color name="offWhiteRed">#FFECEB</color>
+    <color name="lightRed">#FF473D</color>
+    <color name="red">#CC3830</color>
+    <color name="darkRed">#992A24</color>
+
+    <!-- HOME BLOCKS -->
+    <color name="home1">#854442</color>
+    <color name="home2">#4B3832</color>
+    <color name="home3">#3C2F2F</color>
+    <color name="home4">#BE9B7B</color>
+    <color name="home5">#3C2F2F</color>
+</resources>
