@@ -13,22 +13,24 @@ import android.widget.TextView;
 
 public class HomePage extends AppCompatActivity {
 
-    View block1, block2, block3, block4, block5, block6;
-    Animation anim1, anim2, anim3, anim4, anim5, anim6;
-    Integer animationDuration;
-    Button sign_in, main_page_log_in;
-    Typeface tf;
-    TextView tv;
+    private View block1, block2, block3, block4, block5, block6;
+    private Animation anim1, anim2, anim3, anim4, anim5, anim6;
+    private Integer animationDuration;
+    private Button sign_in, main_page_log_in;
+    private Typeface tf;
+    private TextView tv;
+    private LinearLayout linear;
+    private int navigationBarHeight, resourceId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        LinearLayout linear = (LinearLayout) findViewById(R.id.buttonLayout);
+        linear = (LinearLayout) findViewById(R.id.buttonLayout);
 
-        int navigationBarHeight = 0;
-        int resourceId = getResources().getIdentifier("navigation_bar_height", "dimen", "android");
+        navigationBarHeight = 0;
+        resourceId = getResources().getIdentifier("navigation_bar_height", "dimen", "android");
         if (resourceId > 0) {
             navigationBarHeight = getResources().getDimensionPixelSize(resourceId);
         }
@@ -69,7 +71,6 @@ public class HomePage extends AppCompatActivity {
         animationDuration = 5000;
 
         animate();
-
     }
 
     @Override
@@ -78,7 +79,7 @@ public class HomePage extends AppCompatActivity {
         animate();
     }
 
-    public void animate(){
+    private void animate(){
         anim1 = AnimationUtils.loadAnimation(this, R.anim.main_page_row1);
         anim2 = AnimationUtils.loadAnimation(this, R.anim.main_page_row1);
         anim3 = AnimationUtils.loadAnimation(this, R.anim.main_page_row1);
@@ -92,7 +93,6 @@ public class HomePage extends AppCompatActivity {
         anim4.setDuration(animationDuration);
         anim5.setDuration(animationDuration);
         anim6.setDuration(animationDuration);
-
 
         anim1.setRepeatCount(Animation.INFINITE);
         anim2.setRepeatCount(Animation.INFINITE);

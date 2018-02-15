@@ -11,18 +11,21 @@ import android.widget.TextView;
 
 public class ConnectPage extends AppCompatActivity {
 
-    Typeface tf, tf2;
-    TextView tv1, tv2;
+    private Typeface tf, tf2;
+    private TextView tv1, tv2;
+    private LinearLayout linear;
+    private int navigationBarHeight, resourceId;
+    private Button employer, student;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connect);
 
-        LinearLayout linear = (LinearLayout) findViewById(R.id.connectLayout);
+        linear = (LinearLayout) findViewById(R.id.connectLayout);
 
-        int navigationBarHeight = 0;
-        int resourceId = getResources().getIdentifier("navigation_bar_height", "dimen", "android");
+        navigationBarHeight = 0;
+        resourceId = getResources().getIdentifier("navigation_bar_height", "dimen", "android");
         if (resourceId > 0) {
             navigationBarHeight = getResources().getDimensionPixelSize(resourceId);
         }
@@ -31,16 +34,15 @@ public class ConnectPage extends AppCompatActivity {
             linear.setPadding(0,0, 0, navigationBarHeight);
         }
 
-
         tf = Typeface.createFromAsset(getAssets(),"fonts/Montserrat-SemiBold.ttf");
         tf2 = Typeface.createFromAsset(getAssets(),"fonts/Montserrat-Bold.ttf");
-        tv1 = (TextView) findViewById(R.id.connectMainTitle);
-        tv1.setTypeface(tf2);
 
+        tv1 = (TextView) findViewById(R.id.connectMainTitle);
         tv2 = (TextView) findViewById(R.id.connectDescription);
+        tv1.setTypeface(tf2);
         tv2.setTypeface(tf);
 
-        Button employer = (Button) findViewById(R.id.employer_button);
+        employer = (Button) findViewById(R.id.employer_button);
         employer.setTypeface(tf);
         employer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +51,7 @@ public class ConnectPage extends AppCompatActivity {
             }
         });
 
-        Button student = (Button) findViewById(R.id.student_button);
+        student = (Button) findViewById(R.id.student_button);
         student.setTypeface(tf);
         student.setOnClickListener(new View.OnClickListener() {
             @Override

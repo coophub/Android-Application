@@ -12,18 +12,22 @@ import android.widget.TextView;
 
 public class LogInPage extends AppCompatActivity {
 
-    Typeface tf, tf2;
+    private Typeface tf, tf2;
+    private LinearLayout linear;
+    private int navigationBarHeight, resourceId;
+    private TextView tv1, tv2;
+    private EditText et1, et2;
+    private Button logIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
+        linear = (LinearLayout) findViewById(R.id.logInLayout);
 
-        LinearLayout linear = (LinearLayout) findViewById(R.id.logInLayout);
-
-        int navigationBarHeight = 0;
-        int resourceId = getResources().getIdentifier("navigation_bar_height", "dimen", "android");
+        navigationBarHeight = 0;
+        resourceId = getResources().getIdentifier("navigation_bar_height", "dimen", "android");
         if (resourceId > 0) {
             navigationBarHeight = getResources().getDimensionPixelSize(resourceId);
         }
@@ -32,26 +36,22 @@ public class LogInPage extends AppCompatActivity {
             linear.setPadding(0,0, 0, navigationBarHeight);
         }
 
-
         tf = Typeface.createFromAsset(getAssets(),"fonts/Montserrat-SemiBold.ttf");
         tf2 = Typeface.createFromAsset(getAssets(),"fonts/Montserrat-Bold.ttf");
 
-        TextView tv1 = (TextView) findViewById(R.id.logInDescription);
+        tv1 = (TextView) findViewById(R.id.logInDescription);
+        tv2 = (TextView) findViewById(R.id.logInMainTitle);
         tv1.setTypeface(tf);
-
-
-        TextView tv2 = (TextView) findViewById(R.id.logInMainTitle);
         tv2.setTypeface(tf2);
 
-        EditText et1 = (EditText) findViewById(R.id.editText2);
+        et1 = (EditText) findViewById(R.id.editText2);
+        et2 = (EditText) findViewById(R.id.editText3);
         et1.setTypeface(tf);
-
-        EditText et2 = (EditText) findViewById(R.id.editText3);
         et2.setTypeface(tf);
 
-        Button log_in = (Button) findViewById(R.id.log_in_log_in_button);
-        log_in.setTypeface(tf);
-        log_in.setOnClickListener(new View.OnClickListener() {
+        logIn = (Button) findViewById(R.id.log_in_log_in_button);
+        logIn.setTypeface(tf);
+        logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LogInPage.this, ConnectPage.class));
