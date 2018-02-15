@@ -2,5 +2,4 @@
 <resources>
     <dimen name="paddingHomeBlock">140dp</dimen>
     <dimen name="innerPadding">15dp</dimen>
-    <dimen name="offset">-40%p</dimen>
 </resources>
